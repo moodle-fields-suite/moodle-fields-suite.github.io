@@ -120,7 +120,7 @@ header {
 .brand-logo {
   width: 36px;
   height: 36px;
-  border-radius: var(--radius-md);
+  border-radius: 0;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #fff;
   display: flex;
