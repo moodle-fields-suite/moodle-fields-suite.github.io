@@ -296,23 +296,17 @@ main {
 }
 
 .plugin-grid > .repo-card {
-  grid-column: span 3;
-}
-
-.plugin-grid > .repo-card:nth-child(-n + 3) {
   grid-column: span 2;
 }
 
 @media (max-width: 1100px) {
-  .plugin-grid > .repo-card,
-  .plugin-grid > .repo-card:nth-child(-n + 3) {
+  .plugin-grid > .repo-card {
     grid-column: span 3;
   }
 }
 
 @media (max-width: 720px) {
-  .plugin-grid > .repo-card,
-  .plugin-grid > .repo-card:nth-child(-n + 3) {
+  .plugin-grid > .repo-card {
     grid-column: 1 / -1;
   }
 }
