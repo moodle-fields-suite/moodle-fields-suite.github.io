@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moodle Fields Suite</title>
+  <meta name="robots" content="noindex">
+  <script>
+    (function () {
+      var moved = ["local_fieldssuite", "profilefield_json", "customfield_json", "tool_competencycustomfields", "tool_categorycustomfields", "tool_learningplancustomfields", "tool_badgecustomfields"];
+      var parts = window.location.pathname.split('/');
+      if (moved.indexOf(parts[1]) !== -1) {
+        parts[1] = 'moodle-' + parts[1];
+        window.location.replace(parts.join('/') + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Page not found / P&aacute;gina n&atilde;o encontrada. <a href="/">Moodle Fields Suite</a></p>
+</body>
+</html>
